@@ -387,6 +387,9 @@ export default {
 
 			this.$api.expose(this.resetScan);
 			this.$api.expose(this.viewer, 'viewer');
+
+			// TODO: Added for testing annotation overlays, rewrite
+			this.$root.viewer = this.viewer;
 		},
 		loadImageInfo(reset = false) {
 			this.stopLoadingWatch();
